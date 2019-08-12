@@ -1,0 +1,246 @@
+/*
+Theme Name: WP Theme Dev 1
+Author: Keerti Shekhar singh Bisht
+Author URI: https://in.linkedin.com/in/keerti-shekhar-ab108717a
+Version: 1.0
+Tags: black, brown, orange, tan, white, yellow, light, one-column, two-columns, right-sidebar, flexible-width, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, translation-ready
+Text Domain: wpthemedev1
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+/* Header Parallax Element Style*/
+.paral {
+min-height: 450px;
+background-attachment: fixed;
+background-size: cover;
+background-position: 50% 50%;
+}
+.paral .page-header {
+  width= 100%;
+}
+.page-header{
+  position: relative;
+}
+.page-header img{
+  opacity: .5px;
+}
+/* Image for Parallax Section */
+/* <?php $add_parralax_image_1 = get_theme_mod('add_parralax_image_1');?>
+.paralsec {
+
+  background-image: url(<?php echo $add_parralax_image_1 ;?>);
+background-image: url("https://img.webnots.com/2017/05/parallax.jpg"); */
+
+nav.mb-1.navbar.navbar-expand-lg.navbar-dark.orange.lighten-1 {
+    background-color: #860607;
+}
+/* Add more images for more sections */
+
+.menu-logo img{
+  height: 79px !important;
+  width: 226px !important;
+
+}
+.menu-define .navbar {
+  height: 75px;
+}
+.full-width{
+  background-color: #860607;
+  text-align: center;
+}
+.navbar {
+  /* margin-left: 90px; */
+  font-size: 33px;
+}
+.menu-item{
+  /* border: 1px solid white; */
+  margin-left:20px;
+
+}
+/* Reset. */
+* {
+    box-sizing: border-box;
+}
+
+
+/* Panels. */
+.splitview {
+    position: relative;
+    width: 100%;
+    min-height: 22vw;
+    overflow: hidden;
+}
+
+.panel {
+    position: absolute;
+    width: 100vw;
+    min-height: 22vw;
+    overflow: hidden;
+}
+
+    .panel .content {
+        position: absolute;
+        width: 100vw;
+        min-height: 22vw;
+        color: #FFF;
+    }
+
+    .panel .description {
+        width: 0%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: center;
+    }
+
+    .panel img {
+        box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.15);
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+
+.bottom {
+    background-color: rgba(80, 127, 213, 0.74);
+    z-index: 1;
+}
+
+    .bottom .description {
+        right: 5%;
+    }
+
+.top {
+    background-color: rgb(77, 69, 173);
+    z-index: 2;
+    width: 50vw;
+
+    /*-webkit-clip-path: polygon(60% 0, 100% 0, 100% 100%, 40% 100%);
+    clip-path: polygon(60% 0, 100% 0, 100% 100%, 40% 100%);*/
+}
+
+    .top .description {
+        left: 5%;
+    }
+
+/* Handle. */
+.handle {
+    height: 100%;
+    position: absolute;
+    display: block;
+    background-color: rgb(253, 171, 0);
+    width: 5px;
+    top: 0;
+    left: 50%;
+    z-index: 3;
+}
+
+/* Skewed. */
+.skewed .handle {
+    top: 50%;
+    transform: rotate(30deg) translateY(-50%);
+    height: 200%;
+    -webkit-transform-origin: top;
+    -moz-transform-origin: top;
+    transform-origin: top;
+}
+
+.skewed .top {
+    transform: skew(-30deg);
+    margin-left: -1000px;
+    width: calc(50vw + 1000px);
+}
+
+.skewed .top .content {
+    transform: skew(30deg);
+    margin-left: 1000px;
+}
+
+/* Responsive. */
+@media (max-width: 900px) {
+    body {
+        font-size: 75%;
+    }
+}
+
+.custom_class_slide{
+  position: absolute !important;
+}
+/* .video-container {
+   position:relative;
+   padding-bottom:0%;
+   padding-top:0px;
+   height:100%;
+   overflow:hidden;
+ }
+ #video-1-1_html5{
+   /* position: fixed; */
+ /*right: 0;
+ bottom: 0;
+ min-width: 100%;
+ min-height: 100%;
+ } */
+/* .video-container iframe, .video-container object, .video-container embed, .video-container video {
+       position:absolute;
+       display: block;
+       top:0; left:0;
+       height:100% !important;
+       min-width: 100%;
+       min-height: 100%;
+       z-index: 1000;
+       overflow: hidden;
+       padding: 0px 0px 0px 0px ;
+      } */
+      .wp-video, video.wp-video-shortcode, .mejs-container, .mejs-overlay.load {
+          width: 100% !important;
+          height: 100% !important;
+      }
+      .mejs-container {
+          padding-top: 56.25%;
+      }
+      .wp-video, video.wp-video-shortcode {
+          max-width: 100% !important;
+      }
+      video.wp-video-shortcode {
+          position: relative;
+      }
+      .mejs-mediaelement {
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+      }
+      .mejs-controls {
+        display: none !important;
+        visibility: hidden !important;
+        }
+      .mejs-overlay-play {
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          width: auto !important;
+          height: auto !important;
+      }
+      .mejs-layers{
+        display:none;
+      }
+
+
+      .video-container {
+        position: relative;
+        text-align: center;
+        color: white;
+      }
+      .centered {
+        position: absolute;
+            top: 200%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 9;
+            color:white;
+      }

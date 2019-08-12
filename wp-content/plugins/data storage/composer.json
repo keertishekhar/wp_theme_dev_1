@@ -1,0 +1,17 @@
+{
+    "name": "keerti/datamanager",
+    "description": "This is a plugin for data manager on wordpress",
+    "type": "project",
+    "license": "GPL",
+    "authors": [
+        {
+            "name": "keerti",
+            "email": "keerti@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload":{
+      "psr-4": {"Inc\\": "./inc"}
+    }
+}
